@@ -389,16 +389,10 @@ public class FAQ {
 								+ "Avoid quests in the quest area, they are much harder than the easy quests.");
 			} else if (args[0].equalsIgnoreCase("ranks") && args.length == 1) {
 				sender.sendMessage(ChatColor.GOLD + "Ranks: " + ChatColor.WHITE
-						+ "WhiteLotus - Top 5 most active players of the week that are of the Member rank. "
-						+ "Top Voter - vote 24 times, AirMonk/Waterspirit/EarthKing/FireLord - Win a Bending tournament on saturday. "
-						+ "PVP Master - Win the sunday pvp tournament. FireFerret - Rank top 3 in PBA matches. "
-						+ "Soldier/Captain/General/AirMaster/WaterMaster/EarthMaster/FireMaster - Donate. "
+						+ "WhiteLotus - Top 3 most active players of the week that are of the Member rank. "
+						+ "Top Voter - top voter of the month on the website, AirMonk/Waterspirit/EarthKing/FireLord - Win a Bending tournament on saturday. "
+						+ "Soldier/Captain/General/Corporal/AirMaster/WaterMaster/EarthMaster/FireMaster - Donate. "
 						+ "Helper(Staff) - play for at least 3 months and be recommended by 3 other staff members.");
-			} else if (args[0].equalsIgnoreCase("Minigames") && args.length == 1) {
-				sender.sendMessage(ChatColor.GOLD + "Minigames: " + ChatColor.WHITE
-						+ "MobArena - Fight monsters for item rewards (/ma join), Spleef - Cash reward (/spleef join). "
-						+ "Deathmatch - PVP for a cash reward (/dm join), Dungeons - Search dungeons for cash/item reward signs. "
-						+ "Maze - Cash/Item rewards, Skyblock - just for fun.");
 			} else if (args[0].equalsIgnoreCase("Challenge") && args.length == 1) {
 				sender.sendMessage(ChatColor.GOLD + "Challenge: " + ChatColor.WHITE
 						+ "Warriors: Place a Coal, IronIngot, GoldIngot, or Diamond into an ItemFrame and right click the "
