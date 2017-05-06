@@ -22,7 +22,7 @@ import me.coolade.monstersplus.monsters.MonsterList;
 
 public class FAQ {
 
-	public static String[] topics = { "Money", "Market", "Monsters", "Quests", "Jobs", "Survivalist", "Miner",
+	public static String[] topics = { "Money", "Monsters", "Quests", "Jobs", "Survivalist", "Miner",
 			"Warrior", "Fisherman", "WitchDoctor", "Farmer", "Enchanter", "Builder", "Blacksmith", "Disguise",
 			"Customarrows", "Oreradar", "Tracking", "Brewing", "Fishing", "Jobenchant", "Customenchant", "ArrowRecipes",
 			"Farmer Recipes", "Builder Recipes", "Trophy", "Powerstones", "ExpTrading", "Bombs", "Enderdragonspawning",
@@ -367,29 +367,19 @@ public class FAQ {
 						+ "/powerstone, /faq monsters, /faq trophy, /faq customenchant, /faq builder");
 			} else if (args[0].equalsIgnoreCase("money") && args.length == 1) {
 				sender.sendMessage(ChatColor.GOLD + "Ways to earn money: ");
-				sender.sendMessage(ChatColor.AQUA + "1. Jobs: " + ChatColor.WHITE
+				sender.sendMessage(ChatColor.AQUA + "- Jobs: " + ChatColor.WHITE
 						+ "Earn money by completing various job tasks. (/faq jobs)");
-				sender.sendMessage(ChatColor.AQUA + "2. Quests: " + ChatColor.WHITE
+				sender.sendMessage(ChatColor.AQUA + "- Quests: " + ChatColor.WHITE
 						+ "Complete quests offered by NPC's around the town. (/faq quests)");
-				sender.sendMessage(ChatColor.AQUA + "2. Maze: " + ChatColor.WHITE
-						+ "Collect items and money while completing the maze, (/warp maze).");
-				sender.sendMessage(ChatColor.AQUA + "4. Shop: " + ChatColor.WHITE
+				sender.sendMessage(ChatColor.AQUA + "- Shop: " + ChatColor.WHITE
 						+ "Warp to the wild (/randomlocation or /warp wild), collect items, and sell them to the store (/warp shop)");
-				sender.sendMessage(ChatColor.AQUA + "5. Market: " + ChatColor.WHITE
-						+ "Sell items to other players using /market, /market listings, /market help, (/faq market)");
-				sender.sendMessage(ChatColor.AQUA + "6. PVP. : " + ChatColor.WHITE
+				sender.sendMessage(ChatColor.AQUA + "- Market: " + ChatColor.WHITE
+						+ "Sell items to other players using /market");
+				sender.sendMessage(ChatColor.AQUA + "- PVP. : " + ChatColor.WHITE
 						+ "Kill other players in the Wild or BendingArena, players gain money for killing each other.");
-				sender.sendMessage(ChatColor.AQUA + "7. Mobarena. : " + ChatColor.WHITE
-						+ "Kill monsters and collect items in the Mobarena (/warp mobarena), this works best if you are a Warrior or Survivalist (/faq jobs).");
-				sender.sendMessage(ChatColor.AQUA + "8. Voting. : " + ChatColor.WHITE
-						+ "Gain $50 for every server vote, go to www.bendcraft.enjin.com (lower left hand corner). If you are cracked you won't be able to vote on all the links.");
+				sender.sendMessage(ChatColor.AQUA + "- Voting. : " + ChatColor.WHITE
+						+ "Gain $25 for every server vote, go to http://www.bclegacy.enjin.com (lower left hand corner). If you are cracked you won't be able to vote on all the links.");
 
-			} else if (args[0].equalsIgnoreCase("market") && args.length == 1) {
-				sender.sendMessage(ChatColor.GOLD + "Market: " + ChatColor.WHITE
-						+ "Players can sell and buy items with each other using the Market. "
-						+ "To see available items type /market listings. " + "To sell an item do /market create. "
-						+ "To collect an item or money do /market mail. " + ChatColor.GOLD
-						+ "To display more information type: " + ChatColor.RED + "/market help");
 			} else if (args[0].equalsIgnoreCase("quests") && args.length == 1) {
 				sender.sendMessage(
 						ChatColor.GOLD + "Quests: " + ChatColor.WHITE + "Quests are offered by NPC's around the spawn. "
@@ -399,16 +389,10 @@ public class FAQ {
 								+ "Avoid quests in the quest area, they are much harder than the easy quests.");
 			} else if (args[0].equalsIgnoreCase("ranks") && args.length == 1) {
 				sender.sendMessage(ChatColor.GOLD + "Ranks: " + ChatColor.WHITE
-						+ "WhiteLotus - Top 5 most active players of the week that are of the Member rank. "
-						+ "Top Voter - vote 24 times, AirMonk/Waterspirit/EarthKing/FireLord - Win a Bending tournament on saturday. "
-						+ "PVP Master - Win the sunday pvp tournament. FireFerret - Rank top 3 in PBA matches. "
-						+ "Soldier/Captain/General/AirMaster/WaterMaster/EarthMaster/FireMaster - Donate. "
+						+ "WhiteLotus - Top 3 most active players of the week that are of the Member rank. "
+						+ "Top Voter - top voter of the month on the website, AirMonk/Waterspirit/EarthKing/FireLord - Win a Bending tournament on saturday. "
+						+ "Soldier/Captain/General/Corporal/AirMaster/WaterMaster/EarthMaster/FireMaster - Donate. "
 						+ "Helper(Staff) - play for at least 3 months and be recommended by 3 other staff members.");
-			} else if (args[0].equalsIgnoreCase("Minigames") && args.length == 1) {
-				sender.sendMessage(ChatColor.GOLD + "Minigames: " + ChatColor.WHITE
-						+ "MobArena - Fight monsters for item rewards (/ma join), Spleef - Cash reward (/spleef join). "
-						+ "Deathmatch - PVP for a cash reward (/dm join), Dungeons - Search dungeons for cash/item reward signs. "
-						+ "Maze - Cash/Item rewards, Skyblock - just for fun.");
 			} else if (args[0].equalsIgnoreCase("Challenge") && args.length == 1) {
 				sender.sendMessage(ChatColor.GOLD + "Challenge: " + ChatColor.WHITE
 						+ "Warriors: Place a Coal, IronIngot, GoldIngot, or Diamond into an ItemFrame and right click the "
